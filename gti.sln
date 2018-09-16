@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gti", "gti\gti.csproj", "{60077FF0-0EA0-412B-A0FB-5650F68FAA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gti.core", "gti.core\gti.core.csproj", "{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60077FF0-0EA0-412B-A0FB-5650F68FAA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60077FF0-0EA0-412B-A0FB-5650F68FAA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60077FF0-0EA0-412B-A0FB-5650F68FAA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60077FF0-0EA0-412B-A0FB-5650F68FAA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
