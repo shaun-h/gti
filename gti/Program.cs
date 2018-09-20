@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using CommandLine;
+using gti.core.Interfaces;
+using gti.core.Managers;
+using gti.core.Operations;
 using gti.Factories;
 using gti.Interfaces;
 using gti.Models;
 using Ninject;
+using Ninject.Activation;
 
 namespace gti
 {
@@ -24,7 +29,8 @@ namespace gti
                 try
                 {
                     var factory = _kernel.Get<IOperationFactory>();
-                    var operation = factory.GetOperation(x.Operation);
+                    var operation = factory.GetOperation(x);
+                    operation.PerformOperation();
                 }
                 catch (ArgumentOutOfRangeException e)
                 {
@@ -38,7 +44,17 @@ namespace gti
         private static void RegisterTypes()
         {
             _kernel = new StandardKernel();
-            _kernel.Bind<IOperationFactory>().To<OperationFactory>();
+            _kernel.Bind<IOperationFactory>().ToMethod(a => new OperationFactory(GetTypeInstanceFromKernel));
+            _kernel.Bind<InstallOperation>().ToSelf();
+            _kernel.Bind<ListOperation>().ToSelf();
+            _kernel.Bind<SaveOperation>().ToSelf();
+            _kernel.Bind<IProcessManager>().To<ProcessManager>();
+            _kernel.Bind<IGlobalToolsManager>().To<GlobalToolsManager>();
+        }
+
+        private static IOperation GetTypeInstanceFromKernel(Type type)
+        {
+            return (IOperation)_kernel.Get(type);
         }
     }
 }

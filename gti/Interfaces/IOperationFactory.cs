@@ -1,9 +1,10 @@
 using gti.core.Interfaces;
+using gti.Models;
 
 namespace gti.Interfaces
 {
     public interface IOperationFactory
     {
-        IOperation GetOperation(string operation);
+        IOperation GetOperation(CommandOptions options);
     }
 }
