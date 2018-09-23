@@ -13,7 +13,7 @@
         <PackageLicenseUrl>https://raw.githubusercontent.com/shaun-h/gti/master/LICENSE.md</PackageLicenseUrl>
         <PackageProjectUrl>https://github.com/shaun-h/gti/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/shaun-h/gti.git</RepositoryUrl>
-        <PackageTags>Global Tool;Global Tools Installer;gti</PackageTags>
+        <PackageTags>gti</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
