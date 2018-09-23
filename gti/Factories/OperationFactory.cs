@@ -58,16 +58,8 @@ namespace gti.Factories
                         saveOperationOptions.OutputType = options.OutputType;
                     }
                     return saveOperationOptions;
-                case "list":
-                    var listOperationOptions = new ListOperationOptions();
-                    listOperationOptions.FeedUrl = "https://api.nuget.org/v3/index.json";
-                    if (!string.IsNullOrWhiteSpace(options.NuGetFeed))
-                    {
-                        listOperationOptions.FeedUrl = options.NuGetFeed;
-                    }
-                    return listOperationOptions;
                 default:
-                    throw new ArgumentOutOfRangeException($"Invalid operation requested {options.Command}, valid operations are [list,save,install]");                    
+                    throw new ArgumentOutOfRangeException($"Invalid operation requested {options.Command}, valid operations are [save,install]");                    
             }
         }
 
@@ -75,7 +67,6 @@ namespace gti.Factories
         {
             _operationMappings = new Dictionary<string, Type>
             {
-                {"list", typeof(ListOperation)}, 
                 {"save", typeof(SaveOperation)}, 
                 {"install", typeof(InstallOperation)}
             };
@@ -91,10 +82,6 @@ namespace gti.Factories
             var type = _operationMappings[operation];
             if (_func == null)
             {
-                if (typeof(ListOperation) == type)
-                {
-                    return new ListOperation();
-                }
                 if (typeof(SaveOperation) == type)
                 {
                     return new SaveOperation(new GlobalToolsManager(new ProcessManager()));

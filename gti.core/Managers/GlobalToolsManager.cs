@@ -36,7 +36,7 @@ namespace gti.core.Managers
             if (output.ExitCode == 0)
             {
 
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 foreach (var line in output.StandardOutLines)
                 {
                     Console.WriteLine(line);

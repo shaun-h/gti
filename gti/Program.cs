@@ -46,7 +46,6 @@ namespace gti
             _kernel = new StandardKernel();
             _kernel.Bind<IOperationFactory>().ToMethod(a => new OperationFactory(GetTypeInstanceFromKernel));
             _kernel.Bind<InstallOperation>().ToSelf();
-            _kernel.Bind<ListOperation>().ToSelf();
             _kernel.Bind<SaveOperation>().ToSelf();
             _kernel.Bind<IProcessManager>().To<ProcessManager>();
             _kernel.Bind<IGlobalToolsManager>().To<GlobalToolsManager>();
