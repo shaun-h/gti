@@ -4,6 +4,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gti", "gti\gti.csproj", "{6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gti.core", "gti.core\gti.core.csproj", "{AD349AA7-E211-4CE5-A3BF-10A3FEEA5915}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{2833DCD0-86D7-4289-A8E6-FA359EFAD433}"
+ProjectSection(SolutionItems) = preProject
+	LICENSE.md = LICENSE.md
+	NOTICES.md = NOTICES.md
+	README.md = README.md
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

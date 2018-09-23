@@ -136,8 +136,6 @@ namespace gti.core.Managers
                         gt.Id = id;
                         gt.Command = command;
                         gt.Version = version;
-                        gt.FeedUri = "https://api.nuget.org/v3/index.json";
-
                         gts.Tools.Add(gt);
                     }
                 }
