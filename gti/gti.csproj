@@ -3,7 +3,6 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp2.1</TargetFramework>
-
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>gti</ToolCommandName>
         <PackageId>gti</PackageId>
@@ -13,7 +12,7 @@
         <Copyright>© Shaun Hevey 2018</Copyright>
         <PackageLicenseUrl>https://raw.githubusercontent.com/shaun-h/gti/master/LICENSE.md</PackageLicenseUrl>
         <PackageProjectUrl>https://github.com/shaun-h/gti/</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/shaun-h/gti/</RepositoryUrl>
+        <RepositoryUrl>https://github.com/shaun-h/gti.git</RepositoryUrl>
         <PackageTags>Global Tool;Global Tools Installer;gti</PackageTags>
     </PropertyGroup>
 
