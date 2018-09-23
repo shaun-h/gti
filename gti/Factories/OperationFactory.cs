@@ -38,6 +38,11 @@ namespace gti.Factories
             {
                 case "install":
                     var installOperationOptions = new InstallOperationOptions();
+                    installOperationOptions.Inputfilename = "tools.gti";
+                    if (!string.IsNullOrWhiteSpace(options.InputFilename))
+                    {
+                        installOperationOptions.Inputfilename = options.InputFilename;
+                    }
                     return installOperationOptions;
                 case "save":
                     var saveOperationOptions = new SaveOperationOptions();
@@ -96,7 +101,7 @@ namespace gti.Factories
                 }
                 if (typeof(InstallOperation) == type)
                 {
-                    return new InstallOperation();
+                    return new InstallOperation(new GlobalToolsManager(new ProcessManager()));
                 }
             }
             else

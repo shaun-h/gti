@@ -15,5 +15,8 @@ namespace gti.Models
         
         [Option('t', "type", Required = false ,HelpText = "This is file type {json, csv}")]
         public string OutputType { get; set; }
+        
+        [Option('i', "input", Required = false ,HelpText = "This is input filename")]
+        public string InputFilename { get; set; }
     }
 }
