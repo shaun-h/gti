@@ -20,29 +20,31 @@ To install this tool run the following command.
 
 Once installed Global tools installer has a number of operations it can perform.
 
-## Operations
+## Commands
+
+The following list of commands are the basic commands that are available, other options for these commands are available in the in app help.
 
 ### Save
 
-The save operation is used to save all currently installed global tools on the machine out in to a file so they can be installed again later.
+The save command is used to save all currently installed global tools on the machine out in to a file so they can be installed again later.
 
 You use this command run the following command.
 
-`gti save `
+`gti -c save `
 
 It will save a file out in the current folder named tools.gti unless a different filename has been given to the command.
 
 ---
 
-### List
+### Install
 
+The install command is used to to install global tools on a machine from a global tools (tools.gti) file.
+
+`gti -c install `
+
+This will search for a file named tools.gti in the current directory to install, if this isn't overwritten.
 
 ---
-
-## Contribute
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
-
 
 ## License
 
@@ -50,9 +52,12 @@ See [LICENSE]()
 
 ## Release notes
 
+- 0.5 - this the first public release, treat this as a beta.
+
 ## Road map
 
-
+- Improved documentation
+- Show a list of tools about to be installed and ask to accept
 
 ## Known issues
 
