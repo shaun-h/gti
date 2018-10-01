@@ -52,9 +52,9 @@ If you would like to create a tools.gti file manually it needs to be in the foll
 The header row is required and each row below the header row is a tool that you want to install.
 The Id column is the only one to have a value the others can be empty, I have included a number of example rows.
 
-ID - is the NuGet package Id
-Version - is the NuGet version you want to install, if left blank it will install the latest non pre-release version.
-FeedUri - is the service index uri of the feed you want to install the package from, if this is left blank it will use the feeds configured on the system.
+- ID - is the NuGet package Id
+- Version - is the NuGet version you want to install, if left blank it will install the latest non pre-release version.
+- FeedUri - is the service index uri of the feed you want to install the package from, if this is left blank it will use the feeds configured on the system.
 
 ```
 Id,Version,FeedUri
