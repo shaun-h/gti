@@ -4,11 +4,8 @@ namespace gti.Models
 {
     public class CommandOptions
     {
-        [Option('c', "command", HelpText = "This is the command to run, valid commands are {list, install, save}")]
+        [Option('c', "command", Required = true, HelpText = "This is the command to run, valid commands are {install, save}")]
         public string Command { get; set; }
-
-        [Option('f', "feed", Required = false ,HelpText = "This is the NuGet feed to use in the operation.")]
-        public string NuGetFeed { get; set; }
         
         [Option('o', "output", Required = false ,HelpText = "This is output filename")]
         public string OutputFilename { get; set; }
