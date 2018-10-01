@@ -3,9 +3,17 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp2.1</TargetFramework>
-
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>gti</ToolCommandName>
+        <PackageId>gti</PackageId>
+        <Title>Global Tools Installer</Title>
+        <Authors>shaun-h</Authors>
+        <Description>This is a global tool to install global tools from a tools.gti file.</Description>
+        <Copyright>© Shaun Hevey 2018</Copyright>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/shaun-h/gti/master/LICENSE.md</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/shaun-h/gti/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/shaun-h/gti.git</RepositoryUrl>
+        <PackageTags>gti</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

@@ -134,7 +134,6 @@ namespace gti.core.Managers
 
                         var gt = new GlobalTool();
                         gt.Id = id;
-                        gt.Command = command;
                         gt.Version = version;
                         gts.Tools.Add(gt);
                     }
